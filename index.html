@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trilha de CSS - DIO</title>
+  <title>Trilha de CSS - Erisson Lima</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="banner">
@@ -12,6 +13,7 @@
       <div class="logo">
         <img src="assets/images/logo.png" title="Logotipo Trilha de CSS DIO" alt="Logotipo Trilha de CSS DIO">
       </div>
+     
       <h1>Trilha de CSS da DIO</h1>
       <p>A nova Trilha de CSS da DIO está disponível. Acesse já e aprenda do zero como desenvolver sites profissionais.</p>
       <button>Quero me inscrever</button>
@@ -26,33 +28,57 @@
       </p>
       <div class="modules-list">
         <div class="module">
-          <span>Módulo 01:</span> primeiros passos com CSS
+          <span>Módulo 01:</span> Primeiros passos com CSS
         </div>
         <div class="module">
-          <span>Módulo 02:</span> trabalhando com layouts no CSS
+          <span>Módulo 02:</span> Trabalhando com layouts no CSS
         </div>
         <div class="module">
-          <span>Módulo 03:</span> refinando os estilos CSS das nossas páginas
+          <span>Módulo 03:</span> Refinando os estilos CSS das nossas páginas
         </div>
       </div>
     </section>
     <section id="transform-world">
-      <p>TRANSFORME O MUNDO COM A GENTE</p>
-    </section>
-    <section id="professional-challenges">
-      <h2>Evolua e encare novos desafios profissionais</h2>
-      <img src="assets/images/professional-challenges.png" title="Homem lendo depoimentos em um tablet" alt="Homem lendo depoimentos em um tablet">
-      <p>
-        Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas 
-        acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, 
-        além do conhecimento técnico. 
-        A nossa missão é te preparar para que você conecte-se com as melhores oportunidades.
+      <p>Evolua e encare novos desafios profissionais
       </p>
     </section>
+    <section id="professional-challenges">
+      <div class="left-content">
+        <img src="assets/images/professional-challenges.png" alt="Imagem de desafios profissionais">
+      </div>
+      <div class="right-content">
+        <h2>Matrículas com 10% de Desconto</h2>
+        <form id="contact-form">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+          
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+          
+          <label for="country">País</label>
+          <select id="country" name="country" required>
+            <option value="">Selecione seu país</option>
+            <option value="BR">Brasil</option>
+            <option value="US">Estados Unidos</option>
+            <option value="PT">Portugal</option>
+            <option value="FR">França</option>
+            <option value="DE">Alemanha</option>
+            <!-- Adicione mais países se necessário -->
+          </select>
+          
+          <label for="phone">DDD e Telefone Celular</label>
+          <input type="text" id="phone" name="phone" placeholder="Digite seu DDD e telefone" required>
+          
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    
+ 
   </main>
   <footer>
     <img class="dio-logo" src="assets/images/dio-logo.png" title="Logotipo DIO com o texto make the change" alt="Logotipo DIO com o texto make the change">
-    <p>Acesse <a href="https://dio.me">dio.me</a> e se cadastre agora</p>
+    <p>Feito por Erisson Lima</p>
   </footer>
 </body>
 </html>
